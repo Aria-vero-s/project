@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>C++ Web Project</title>
+</head>
+<body>
+    <div class="flex-direction-column">
+        <div class="container">
+            <h1>C++ Web Project</h1>
+            <form id="nameForm">
+                <label for="name">Enter your name:</label>
+                <input type="text" id="name" name="name" required>
+                <button type="button" onclick="submitForm()">Submit</button>
+            </form>
+            <div id="greeting"></div>
+        </div>
+        <div class="code-container">
+            <h2>Study Notes:</h2>
+            <pre>
+                <xmp>
+                    #include <iostream>
+                        #include <string>
+                        
+                        int main() {
+                            std::string name;
+                        
+                            std::cout << "Enter your name: ";
+                            std::getline(std::cin, name);
+                        
+                            std::cout << "Hello, " << name << "! Welcome to your first C++ web project." << std::endl;
+                        
+                            return 0;
+                        }                        
+                </xmp>
+            </pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
